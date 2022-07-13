@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>reserv</class>
+ <widget class="QDialog" name="reserv">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>529</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>0</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Condensed</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>렌터카 예약</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="carwidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>154</y>
+     <width>431</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chat">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>434</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Condensed</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border :3px solid blue;
+border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
+   </property>
+   <property name="text">
+    <string>chat</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="reserv_date">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>113</y>
+     <width>194</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="return_date">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>113</y>
+     <width>194</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="oil1">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>381</y>
+     <width>112</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>경유</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="oil2">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>381</y>
+     <width>112</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>휘발유</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="oil3">
+   <property name="geometry">
+    <rect>
+     <x>281</x>
+     <y>381</y>
+     <width>112</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LPG</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="oil4">
+   <property name="geometry">
+    <rect>
+     <x>401</x>
+     <y>381</y>
+     <width>112</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>전기차</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>93</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>예약날짜</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>286</x>
+     <y>92</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>반납날짜</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="booking">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>434</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Condensed</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border :3px solid blue;
+border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
+   </property>
+   <property name="text">
+    <string>book</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
