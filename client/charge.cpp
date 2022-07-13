@@ -97,5 +97,6 @@ void charge::on_pay_clicked()
     else
     {
         QMessageBox::warning(this, "error", "잔액이 부족합니다");
+
     }
 }

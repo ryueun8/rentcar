@@ -44,6 +44,12 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -66,6 +72,12 @@
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
    </property>
    <property name="text">
     <string/>

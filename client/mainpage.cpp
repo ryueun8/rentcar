@@ -19,16 +19,15 @@ mainpage::~mainpage()
 
 void mainpage::on_info_clicked()
 {
-    this->hide();
-    mypage my;
+    mypage my(ID);
     my.setModal(true);
+    my.show();
     my.exec();
     this->show();
 }
 
 void mainpage::on_rental_clicked()
 {
-    this->hide();
     reserv re(ID);
     re.setModal(true);
     re.exec();
@@ -37,7 +36,6 @@ void mainpage::on_rental_clicked()
 
 void mainpage::on_visit_clicked()
 {
-    this->hide();
     sight s;
     s.setModal(true);//setmodal true 다른 ui안작동
     s.exec();

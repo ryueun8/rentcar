@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->move(750, 300);
 }
 
 MainWindow::~MainWindow()
@@ -39,7 +40,6 @@ void MainWindow::on_log_clicked()
             id = ui->id_text2->text().toStdString();
             QMessageBox::information(this, "", "로그인 성공");
 
-            this->close();
             mainpage page(id);
             page.setModal(true);
             page.exec();
