@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <cstring>
 #include <string>
+#include "thread.h"
 
 reserv::reserv(std::string ID, QWidget *parent) :
     QDialog(parent),
@@ -18,10 +19,6 @@ reserv::~reserv()
     delete ui;
 }
 
-void reserv::on_chat_clicked()
-{
-
-}
 
 void reserv::on_oil1_clicked()
 {
@@ -159,7 +156,8 @@ void reserv::on_booking_clicked()
             QMessageBox::warning(this, "error", "재고 없음");
         }
         else
-        {
+        {     
+            qDebug()<<Query.value(0).toInt();
             query ="UPDATE Carlist SET CarNum = '"+std::to_string(--num)+"' WHERE Car = '"+ui->carwidget->item(row, 0)->text().toStdString()+"'";
             Query.exec(QString::fromStdString(query));
             qDebug()<<QString::fromStdString(query);

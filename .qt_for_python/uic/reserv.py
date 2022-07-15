@@ -29,18 +29,6 @@ class Ui_reserv(object):
         self.carwidget.setObjectName("carwidget")
         self.carwidget.setColumnCount(0)
         self.carwidget.setRowCount(0)
-        self.chat = QtWidgets.QPushButton(reserv)
-        self.chat.setGeometry(QtCore.QRect(0, 434, 81, 51))
-        font = QtGui.QFont()
-        font.setFamily("Ubuntu Condensed")
-        font.setPointSize(15)
-        self.chat.setFont(font)
-        self.chat.setStyleSheet("border :3px solid blue;\n"
-"border-top-left-radius :25px;\n"
-"border-top-right-radius : 25px; \n"
-"border-bottom-left-radius : 25px; \n"
-"border-bottom-right-radius : 25px")
-        self.chat.setObjectName("chat")
         self.reserv_date = QtWidgets.QDateTimeEdit(reserv)
         self.reserv_date.setGeometry(QtCore.QRect(54, 113, 194, 26))
         self.reserv_date.setObjectName("reserv_date")
@@ -68,8 +56,11 @@ class Ui_reserv(object):
         self.booking = QtWidgets.QPushButton(reserv)
         self.booking.setGeometry(QtCore.QRect(444, 434, 81, 51))
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Condensed")
-        font.setPointSize(15)
+        font.setFamily("Ubuntu")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
         self.booking.setFont(font)
         self.booking.setStyleSheet("border :3px solid blue;\n"
 "border-top-left-radius :25px;\n"
@@ -85,7 +76,6 @@ class Ui_reserv(object):
         _translate = QtCore.QCoreApplication.translate
         reserv.setWindowTitle(_translate("reserv", "Dialog"))
         self.label.setText(_translate("reserv", "렌터카 예약"))
-        self.chat.setText(_translate("reserv", "chat"))
         self.oil1.setText(_translate("reserv", "경유"))
         self.oil2.setText(_translate("reserv", "휘발유"))
         self.oil3.setText(_translate("reserv", "LPG"))

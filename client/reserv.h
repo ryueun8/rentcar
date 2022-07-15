@@ -19,7 +19,6 @@ public:
     ~reserv();
 
 private slots:
-    void on_chat_clicked();
 
     void on_oil1_clicked();
 
@@ -40,6 +39,7 @@ private:
 
     std::string id;
     std::string save;
+
 };
 
 #endif // RESERV_H

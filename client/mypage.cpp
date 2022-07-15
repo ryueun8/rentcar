@@ -1,6 +1,7 @@
 ﻿#include "mypage.h"
 #include "ui_mypage.h"
 #include <QMessageBox>
+#include <mainpage.h>
 
 mypage::mypage(std::string ID, QWidget *parent) :
     QDialog(parent),
@@ -8,11 +9,22 @@ mypage::mypage(std::string ID, QWidget *parent) :
 {
     ui->setupUi(this);
     id = ID;
+
 }
 
 mypage::~mypage()
 {
     delete ui;
+}
+
+void mypage::closeEvent(QCloseEvent *event)
+{
+    this->close();
+    mainpage main(id);
+    main.setModal(true);
+    main.exec();
+    this->show();
+    QWidget::closeEvent(event);
 }
 
 void mypage::show()
@@ -59,7 +71,7 @@ void mypage::on_cancle_clicked()
     Query.exec(QString::fromStdString(query));
     Query.next();
 
-    if(Query.value(0).toInt() != 0)
+    if(Query.size() != 0)
     {
         std::vector<std::string> x;
         std::string stringBuffer;
@@ -77,7 +89,8 @@ void mypage::on_cancle_clicked()
         query = "UPDATE Carlist SET CarNum = '"+std::to_string(++num)+"'WHERE Car = '"+x[0]+"'";
         Query.exec(QString::fromStdString(query));
 
-        query = "UPDATE user SET reserv = '"+std::to_string(NULL)+"'WHERE userID = '"+id+"'";
+        int num2 = 0;
+        query = "UPDATE user SET reserv = '"+std::to_string(num2)+"'WHERE userID = '"+id+"'";
         Query.exec(QString::fromStdString(query));
         QMessageBox::information(this, "", "예약이 취소되었습니다");
         show();
@@ -90,3 +103,12 @@ void mypage::on_cancle_clicked()
 
 }
 
+
+void mypage::on_pushButton_clicked()
+{
+    this->close();
+    revice re(id);
+    re.setModal(true);
+    re.exec();
+    this->show();
+}

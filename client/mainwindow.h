@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "datadase.h"
+#include "thread.h"
 
 #include <QMainWindow>
 
@@ -15,6 +16,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void closeEvent(QCloseEvent *event);
 
 private slots:
     void on_log_clicked();

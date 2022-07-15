@@ -2,6 +2,7 @@
 #include "ui_mainpage.h"
 #include "mypage.h"
 #include "reserv.h"
+#include "chatting.h"
 
 
 mainpage::mainpage(std::string id, QWidget *parent) :
@@ -19,6 +20,7 @@ mainpage::~mainpage()
 
 void mainpage::on_info_clicked()
 {
+    this->close();
     mypage my(ID);
     my.setModal(true);
     my.show();
@@ -39,5 +41,13 @@ void mainpage::on_visit_clicked()
     sight s;
     s.setModal(true);//setmodal true 다른 ui안작동
     s.exec();
+    this->show();
+}
+
+void mainpage::on_pushButton_clicked()
+{
+    chatting c(ID);
+    c.setModal(true);
+    c.exec();
     this->show();
 }

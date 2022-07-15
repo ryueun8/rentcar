@@ -87,8 +87,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>100</y>
+     <x>230</x>
+     <y>98</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -110,8 +110,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>150</y>
+     <x>215</x>
+     <y>149</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -133,8 +133,8 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>210</y>
+     <x>240</x>
+     <y>197</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -229,6 +229,34 @@ border-radius:8px;</string>
     <string>예약취소</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>360</y>
+     <width>89</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border :3px solid blue;
+border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
+   </property>
+   <property name="text">
+    <string>revice</string>
+   </property>
+  </widget>
   <zorder>textBrowser_8</zorder>
   <zorder>textBrowser_2</zorder>
   <zorder>label</zorder>
@@ -246,6 +274,7 @@ border-radius:8px;</string>
   <zorder>mile_text</zorder>
   <zorder>change</zorder>
   <zorder>cancle</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources/>
  <connections/>

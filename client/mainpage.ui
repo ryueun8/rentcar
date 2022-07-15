@@ -10,6 +10,13 @@
     <height>359</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <italic>true</italic>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -44,6 +51,13 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="text">
     <string>내 정보</string>
    </property>
@@ -56,6 +70,13 @@
      <width>201</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
    </property>
    <property name="text">
     <string>렌터카 예약</string>
@@ -70,8 +91,42 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="text">
     <string>여행지</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>324</x>
+     <y>304</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border :3px solid blue;
+border-top-left-radius :25px;
+border-top-right-radius : 25px; 
+border-bottom-left-radius : 25px; 
+border-bottom-right-radius : 25px</string>
+   </property>
+   <property name="text">
+    <string>chat</string>
    </property>
   </widget>
  </widget>

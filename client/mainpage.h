@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include "sight.h"
+#include "thread.h"
+using namespace std;
 
 namespace Ui {
 class mainpage;
@@ -22,6 +24,8 @@ private slots:
     void on_rental_clicked();
 
     void on_visit_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::mainpage *ui;

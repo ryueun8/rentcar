@@ -5,6 +5,8 @@
 #include "datadase.h"
 #include <vector>
 #include <sstream>//split
+#include "revice.h"
+#include <QCloseEvent>
 
 namespace Ui {
 class mypage;
@@ -18,11 +20,14 @@ public:
     explicit mypage(std::string ID, QWidget *parent = nullptr);
     ~mypage();
     void show();
+    void closeEvent(QCloseEvent *);
 
 private slots:
     void on_change_clicked();
 
     void on_cancle_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::mypage *ui;

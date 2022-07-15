@@ -1,4 +1,5 @@
 QT       += core gui sql
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,33 +18,41 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     charge.cpp \
+    chatting.cpp \
     main.cpp \
     mainpage.cpp \
     mainwindow.cpp \
     mypage.cpp \
     payment.cpp \
     reserv.cpp \
+    revice.cpp \
     sight.cpp \
-    signup.cpp
+    signup.cpp \
+    thread.cpp
 
 HEADERS += \
     charge.h \
+    chatting.h \
     datadase.h \
     mainpage.h \
     mainwindow.h \
     mypage.h \
     payment.h \
     reserv.h \
+    revice.h \
     sight.h \
-    signup.h
+    signup.h \
+    thread.h
 
 FORMS += \
     charge.ui \
+    chatting.ui \
     mainpage.ui \
     mainwindow.ui \
     mypage.ui \
     payment.ui \
     reserv.ui \
+    revice.ui \
     sight.ui \
     signup.ui
 

@@ -45,32 +45,6 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="chat">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>434</y>
-     <width>81</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Ubuntu Condensed</family>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border :3px solid blue;
-border-top-left-radius :25px;
-border-top-right-radius : 25px; 
-border-bottom-left-radius : 25px; 
-border-bottom-right-radius : 25px</string>
-   </property>
-   <property name="text">
-    <string>chat</string>
-   </property>
-  </widget>
   <widget class="QDateTimeEdit" name="reserv_date">
    <property name="geometry">
     <rect>
@@ -180,8 +154,11 @@ border-bottom-right-radius : 25px</string>
    </property>
    <property name="font">
     <font>
-     <family>Ubuntu Condensed</family>
-     <pointsize>15</pointsize>
+     <family>Ubuntu</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
